@@ -1,222 +1,265 @@
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-  background: transparent;
-  outline: none;
-  border: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: transparent;
+    border: none;
+    scroll-behavior: smooth;
 }
 
 img {
-  width: 100%;
-  display: inline-block;
+    width: 100%;
+    display: inline-block;
 }
 
-a, i, button {
-  color: inherit;
+a,
+i,
+button {
+    color: inherit;
 }
 
 :root {
-  --bg-primary: #1F2533;
-  --bg-button: #2F58BB;
-  --bg-nav: rgb(40, 30, 100);
-  --bg-info: rgb(26,33,68);
-  background-color: var(--bg-primary);
-  color: rgb(244, 244, 244);
+    --bg-primary: #1f2533;
+    --bg-button: #2f58bb;
+    --bg-nav: rgb(40, 30, 100);
+    --bg-info: rgb(26, 33, 68);
+    background-color: var(--bg-primary);
+    color: rgb(244, 244, 244);
+    font-family: sans-serif;
 }
 
 .container {
-  display: grid;
-  row-gap: 250px;
+    display: grid;
+    row-gap: 250px;
 }
 /* end of reset */
 
 /* navbar */
 navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: .6rem .9rem;
-  position: fixed;
-  background-color: var(--bg-nav);
-  transition: .4s;
-  top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 0.9rem;
+    align-items: center;
+    position: fixed;
+    background-color: var(--bg-nav);
+    transition: 0.4s;
+    top: 0;
+    left: 0;
 }
 
 .active {
-  box-shadow: 1px 1px 18px var(--bg-button);
-  background-color: rgba(89, 66, 194, .7);
-  backdrop-filter: blur(15px);
+    box-shadow: 1px 1px 18px var(--bg-button);
+    background-color: rgba(89, 66, 194, 0.7);
+    backdrop-filter: blur(15px);
 }
 
 navbar .nav-link {
-  width:40%;
-  height: 355px;
-  right: 0;
-  background-color: var(--bg-info);
-  position: absolute;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  right: -100%;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  transition: .4s;
+    width: 40%;
+    height: 355px;
+    right: 0;
+    background-color: var(--bg-info);
+    position: absolute;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    right: -100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: 0.4s;
 }
 
 navbar .nav-link.active {
-  right: 0%;
+    right: 0%;
 }
 /* end navbar */
 
 /* hero */
 .hero {
-  display: grid;
-  row-gap: 35px;
-  align-items: center;
-  text-align: center;
+    display: grid;
+    row-gap: 35px;
+    align-items: center;
+    text-align: center;
 }
 
 .hero .main-content {
-  display: grid;
-  row-gap: 20px;
-  justify-items: center;
+    display: grid;
+    row-gap: 20px;
+    justify-items: center;
 }
 
 .hero .main-content img {
-  width: 55%;
+    width: 55%;
 }
 
 .hero .main-content h4 {
-  background-color: var(--bg-button);
-  padding: .7rem 1rem;
-  text-align: center;
-  border-radius: .8rem;
+    background-color: var(--bg-button);
+    padding: 0.7rem 1rem;
+    text-align: center;
+    border-radius: 0.8rem;
 }
 
 .hero .about-me {
-  padding: 0 .4rem;
-  line-height: 1.3rem;
+    padding: 0 0.4rem;
+    line-height: 1.3rem;
 }
 
 .hero .about-me p {
-  margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 .hero .about-me p span {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 /* end hero */
 
 /* skills */
 .skills {
-  display: grid;
-  row-gap: 45px;
-  padding: .7rem .6rem;
+    display: grid;
+    row-gap: 45px;
+    padding: 0.7rem 0.6rem;
 }
 
 .skills .hard-skills,
 .skills .soft-skills {
-  display: grid;
-  row-gap: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .skills img {
-  padding: 1.7rem;
-  border-radius: .3rem;
-  border: 2.3px solid var(--bg-button);
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 2.3px solid var(--bg-button);
 }
 
 .skills .soft-skills img {
-  height: 360px;
+    height: 180px;
 }
 /* end skills */
 
+/* projects */
+.container .projects-container {
+    display: grid;
+    row-gap: 45px;
+    border-bottom: 3px solid var(--bg-button);
+    padding-bottom: 2rem;
+}
+
+.container .projects-container img {
+    height: 250px;
+}
+
+.container .projects-container .projects {
+    padding: 0 .8rem;
+    display: grid;
+    row-gap: 45px;
+}
+
+.container .projects-container article {
+    background-color: var(--bg-nav);
+    display: grid;
+    row-gap: 20px;
+    padding: .4rem;
+    margin-bottom: 1.2rem;
+}
+
+.container .projects-container .projects .project .info {
+    display: grid;
+    row-gap: .4rem;
+    margin-top: .7rem;
+}
+
+/* ens projects */
+
 /* personal contact */
 .personal-contact {
-  padding: 0 .5rem;
-  display: grid;
-  row-gap: 10px;
+    display: grid;
+    row-gap: 10px;
+}
+
+.personal-contact article {
+    padding: 0 .5rem;
 }
 
 .personal-contact form {
-  width: 100%;
-  margin-top: 20px;
-  display: grid;
-  grid-template-areas: 
-    'userName sendButton'
-    'userEmail sendButton'
-    'textArea textArea';
-  justify-content: space-between;
-  row-gap: 15px;
-  padding: .9rem;
-  background-color: var(--bg-info);
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas:
+        "userName sendButton"
+        "userEmail sendButton"
+        "textArea textArea";
+    justify-content: space-between;
+    row-gap: 15px;
+    padding: 0.9rem;
+    background-color: var(--bg-info);
 }
 
 .personal-contact form .user-name {
-  grid-area: userName;
+    grid-area: userName;
 }
 
 .personal-contact form .user-email {
-  grid-area: userEmail;
+    grid-area: userEmail;
 }
 
 .personal-contact form .send-btn {
-  grid-area: sendButton;
-  align-self: center;
-  padding: .5rem .7rem;
-  background-color: var(--bg-nav);
-  border: 2.3px solid var(--bg-button);
-  cursor: pointer;
-  border-radius: .6rem;
-  transition: .5s;
+    grid-area: sendButton;
+    align-self: center;
+    padding: 0.5rem 0.7rem;
+    background-color: var(--bg-nav);
+    border: 2.3px solid var(--bg-button);
+    cursor: pointer;
+    border-radius: 0.6rem;
+    transition: 0.5s;
 }
 
 .personal-contact form .send-btn:hover {
-  background-color: rgb(64, 40, 140);
-  color: rgba(200, 200, 200, 1);
+    background-color: rgb(64, 40, 140);
+    color: rgba(200, 200, 200, 1);
 }
 
 ::placeholder {
-  color: inherit;
+    color: inherit;
 }
 
 .personal-contact form textarea {
-  grid-area: textArea;
-  height: 200px;
+    grid-area: textArea;
+    height: 200px;
 }
 
 .personal-contact form input,
-.personal-contact form textarea{
-  border: 2px solid var(--bg-button);
-  border-radius: .3rem;
-  padding: .6rem .8rem;
-  color: inherit;
+.personal-contact form textarea {
+    border: 2px solid var(--bg-button);
+    border-radius: 0.3rem;
+    padding: 0.6rem 0.8rem;
+    color: inherit;
 }
 /* end personal contact */
 
 /* footer */
 footer {
-  display: grid;
-  row-gap: 30px;
-  justify-items: center;
-  background-color: var(--bg-nav);
-  padding: 1.2rem .8rem;
+    display: grid;
+    row-gap: 30px;
+    justify-items: center;
+    background-color: var(--bg-nav);
+    padding: 1.2rem 0.8rem;
 }
 
 footer a {
-  padding: .7rem .9rem;
-  border-radius: .2rem;
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.2rem;
 }
 
 footer .contact-button {
-  background-color: var(--bg-button);
+    background-color: var(--bg-button);
 }
 
 footer .github {
-  border: 2.4px solid var(--bg-button);
+    border: 2.4px solid var(--bg-button);
 }
 /* end footer */

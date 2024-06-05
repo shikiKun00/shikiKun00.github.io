@@ -1,0 +1,33 @@
+@media (min-width: 661px) {
+  
+  html {
+    font-size: 1rem;
+  }
+  
+  .container {
+    padding: 0 1rem;
+  }
+  
+  navbar .opn-nav {
+    display: none;
+  }
+  
+  navbar {
+    padding: 2rem 1.3rem;
+  }
+  
+  navbar h3 {
+    flex-grow: 1;
+  }
+  
+  navbar .nav-link {
+    flex-grow: 1;
+    position: static;
+    display: flex;
+    justify-content: space-evenly;
+    border: none;
+    background-color: transparent;
+    height: 30px;
+    padding: 0;
+  }
+}

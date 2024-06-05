@@ -1,134 +1,334 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
- 
-  <!-- my css -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/screen.css">
-  
-  <title>DayatFrZ</title>
-</head>
-<body>
- 
- <div class="container">
-   <!-- navbar -->
-   <navbar>
-     <h3>DayatFrZ</h3>
-     <div class="nav-link">
-       <a href="#">Home</a>
-       <a href="#about">About</a>
-       <a href="#skills">skills</a>
-       <a href="#project" style="color: gray;">projects</a>
-       <a href="#galley" style="color: gray;">gallery</a>
-       <a href="#media">media</a>
-     </div>
-     <button class="opn-nav">
-       <i data-feather="menu"></i>
-     </button>
-   </navbar>
-   <!-- end navbar -->
-   
-   <!-- hero -->
-   <section class="hero">
-     <div class="main-content">
-       <img src="./img/profile.png" alt="my profile">
-       <h4>Reza Fairuz H</h4>
-     </div>
-     <div class="about-me">
-       <h2>
-         HI, saya Reza Faiurz H,
-       </h2>
-       <p>
-         biasa dipanggil "Dayat" oleh temen-temen,
-         saya 18 tahun, asal semarang.
-         siswa online dari channel youtube
-         Pak Sandhika Galih / "Pak Dhika".
-         saya seorang web design dan juga coders,
-         dan telah membuat project yang dapat membantu
-         saya dalam melatih skill saya, oh ya,
-         saya juga sedang mendalami skill bahasa, agar dapat
-         berkomunikasi dan memahami apa yang orang katakan
-         terutama orang luar negara.
-         serta <span>"JANGAN LUPA TITIK KOMA"</span>
-       </p>
-     </div>
-   </section>
-   <!-- end hero -->
-   
-   <!-- skills -->
-   <section class="skills">
-     <div class="heading-content">
-       <h3>Bakat saya</h3>
-       <p>
-         saya dapat berkerja dengan bakat-bakat
-         yang saya dapat dari belajar, praktek, theory
-         dan pengalaman, dari orang-orang pintar yang berjasa
-         dan telah memberi saya pemahaman akan hal tersebur
-       </p>
-     </div>
-     <div class="hard-skills">
-       <img src="./img/skills/html.jpg" alt="html">
-       <img src="./img/skills/css.jpg" alt="css">
-       <img src="./img/skills/js.jpg" alt="javascript">
-       <img src="./img/skills/ms_word.jpg" alt="ms word">
-       <img src="./img/skills/ms_excel.jpg" alt="ms excel">
-       <img src="./img/skills/power_point.jpg" alt="power point">
-     </div>
-     <div class="soft-skills">
-       <img src="./img/skills/ind_lan.jpg" alt="indonesian language">
-       <img src="./img/skills/jp_lan.jpg" alt="japanese language">
-       <img src="./img/skills/eng_lan.jpg" alt="english language">
-     </div>
-   </section>
-   <!-- end skills -->
-   
-   <!-- personal contact -->
-   <section class="personal-contact">
-     <h4>
-       wanna send me a message
-     </h4>
-     <p>
-       fill ther require input
-       and be polite
-     </p>
-     <form action="" method="get" accept-charset="utf-8">
-       <input class="user-name" type="text" value="" placeholder="your name" />
-       <input class="user-email" type="email" value="" placeholder="your email" />
-       <button class="send-btn" type="submit">send to me</button>
-       <textarea placeholder="enter your message here"></textarea>
-     </form>
-   </section>
-   <!-- end personal contact -->
-   
-   <!-- footer -->
-   <footer>
-     <div class="media">
-       <a href="#none"><i data-feather="instagram"></i></a>
-       <a href="#none"><i data-feather="github"></i></a>
-       <a href="#none"><i data-feather="facebook"></i></a>
-       <a href="#none"><i data-feather="twitter"></i></a>
-     </div>
-     <div class="links">
-       <a class="contact-button" href="#none">Contact Me</a>
-       <a class="github" href="#none">Github</a>
-     </div>
-     <h3>Created By Reza/"Dayat" &copy;2023</h3>
-   </footer>
-   <!-- end footer -->
-   
-   
- </div> 
-  
-  <!-- feather icon -->
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script>
-      feather.replace();
-    </script>
-  
-  <script src="./js/main.js" type="text/javascript" charset="utf-8"></script>
-  
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+        <!-- my css -->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/screen.css" />
+
+        <title>DayatFrZ</title>
+    </head>
+    <body>
+    <div class="container">
+            <!-- navbar -->
+            <navbar>
+                <h3>DayatFrZ</h3>
+                <div class="nav-link">
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">skills</a>
+                    <a href="#projects" style="color: gray">projects</a>
+                    <a href="#galley" style="color: gray">gallery</a>
+                    <a href="#media">media</a>
+                </div>
+                <button class="opn-nav">
+                    <i data-feather="menu"></i>
+                </button>
+            </navbar>
+            <!-- end navbar -->
+
+            <!-- hero -->
+            <section id="about" class="hero">
+                <div class="main-content">
+                    <img src="./img/profile.png" alt="my profile" />
+                    <h4>Reza Fairuz H</h4>
+                </div>
+                <div class="about-me">
+                    <h2>HI, saya Reza Faiurz H,</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Ducimus illum id repellendus fugit exercitationem
+                        iste consequuntur voluptas voluptatem, dignissimos
+                        maiores. Fugiat corporis, facilis sint nam quia pariatur
+                        reprehenderit aliquam quidem illo aspernatur. Voluptas
+                        minima a ssumenda veniam ab tempora omnis commodi.
+                        <span>"JANGAN LUPA TITIK KOMA"</span>
+                    </p>
+                </div>
+            </section>
+            <!-- end hero -->
+
+            <!-- skills -->
+            <section id="skills" class="skills">
+                <article class="heading-content">
+                    <h2>tech and skills</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. A nemo perferendis ipsa m tempore accusantium,
+                        assumenda minus molestias hic rerum quae quo nobis
+                        expedit a sed libero tempora, laboriosam ducimus
+                        aperiam, ab?
+                    </p>
+                </article>
+                <div class="hard-skills">
+                    <img src="./img/skills/html.jpg" alt="html" />
+                    <img src="./img/skills/css.jpg" alt="css" />
+                    <img src="./img/skills/js.jpg" alt="javascript" />
+                    <img src="./img/skills/ms_word.jpg" alt="ms word" />
+                    <img src="./img/skills/ms_excel.jpg" alt="ms excel" />
+                    <img src="./img/skills/power_point.jpg" alt="power point" />
+                </div>
+                <article>
+                    <h3>language which i can speak</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Dolorem ipsum est beatae, praesentium, voluptas
+                        quae eum temporibus, explicabo recusandae ipsa,
+                        laudantium at accusantium totam adipisci culpa veritatis
+                        omnis eveniet exercitationem!
+                    </p>
+                </article>
+                <div class="soft-skills">
+                    <img
+                        src="./img/skills/ind_lan.jpg"
+                        alt="indonesian language"
+                    />
+                    <img
+                        src="./img/skills/jp_lan.jpg"
+                        alt="japanese language"
+                    />
+                    <img
+                        src="./img/skills/eng_lan.jpg"
+                        alt="english language"
+                    />
+                </div>
+            </section>
+            <!-- end skills -->
+
+            <!-- projects -->
+            <section id="projects" class="projects-container">
+                <div class="my-projects">
+                    <article>
+                        <h2>projek yang saya buat</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Possimus a minus delectus eos maiores ullam,
+                            numquam sapiente quam ducimus nemo. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                            Laboriosam est repudiandae veritatis ab tempora
+                            quibusdam.
+                        </p>
+                    </article>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Recusandae et quas aliquam
+                                    illum, maxime mollitia error quaerat ducimus
+                                    odio id.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Eaque, sunt?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Facilis debitis similique,
+                                    natus illum itaque culpa eius laboriosam
+                                    doloribus quisquam nobis quasi esse. Nobis,
+                                    dolore!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Amet dolorum quod ut neque
+                                    perferendis rerum officia natus optio
+                                    tempore, praesentium laborum aliquid! Ad,
+                                    quis, nesciunt? Fuga, voluptatem, dolorem!
+                                    Quidem.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="front-end-mentor-projects">
+                    <article>
+                        <h2>projek dari front end mentor</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit. Possimus a minus delectus eos maiores ullam,
+                            numquam sapiente quam ducimus nemo. Lorem ipsum
+                            dolor sit amet, consectetur adipisicing elit.
+                            Laboriosam est repudiandae veritatis ab tempora
+                            quibusdam.
+                        </p>
+                    </article>
+                    <div class="projects">
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Quasi blanditiis tenetur
+                                    ipsum autem voluptatibus molestias accusamus
+                                    ducimus sapiente deserunt.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Reprehenderit, corporis
+                                    possimus. Delectus magni, molestiae eligendi
+                                    aliquam sit laborum voluptatibus cupiditate.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Voluptatum!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <a href="#none">
+                                <img src="./img/dummy_img.jpg" alt="" />
+                            </a>
+                            <div class="info">
+                                <h3>
+                                    <a href="#none">nama projek</a>
+                                </h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Temporibus, cupiditate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end projects -->
+
+            <!-- personal contact -->
+            <section id="contact" class="personal-contact">
+                <article>
+                    <h4>wanna send me a message</h4>
+                    <p>fill ther require input and be polite</p>
+                </article>
+                <form action="" method="get" accept-charset="utf-8">
+                    <input
+                        class="user-name"
+                        type="text"
+                        value=""
+                        placeholder="your name"
+                    />
+                    <input
+                        class="user-email"
+                        type="email"
+                        value=""
+                        placeholder="your email"
+                    />
+                    <button class="send-btn" type="submit">send to me</button>
+                    <textarea placeholder="enter your message here"></textarea>
+                </form>
+            </section>
+            <!-- end personal contact -->
+
+            <!-- footer -->
+            <footer>
+                <div id="media" class="media">
+                    <a href="#none"><i data-feather="instagram"></i></a>
+                    <a href="#none"><i data-feather="github"></i></a>
+                    <a href="#none"><i data-feather="facebook"></i></a>
+                    <a href="#none"><i data-feather="twitter"></i></a>
+                </div>
+                <div class="links">
+                    <a class="contact-button" href="#none">Contact Me</a>
+                    <a class="github" href="#none">Github</a>
+                </div>
+                <h3>Created By Reza/"Dayat" &copy;2023</h3>
+                <p>
+                    projek ini dibuat dengan hp dan dengan tools yang terbatas,
+                    jadi hasil mungkin bisa kacau
+                </p>
+            </footer>
+            <!-- end footer -->
+        </div>
+
+        <!-- feather icon -->
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            feather.replace();
+        </script>
+
+        <script
+            src="./js/main.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+    </body>
 </html>
